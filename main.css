@@ -1,0 +1,682 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+:root{
+    --intro-email-signup-bg: hsl(217, 28%, 15%);
+    --main-bg: hsl(218, 28%, 13%);
+    --foot-bg: hsl(216, 53%, 9%);
+    --testimon-bg: hsl(219, 30%, 18%);
+    --cyan-cta-bg:hsl(176, 68%, 64%);
+    --blue-cta-bg: hsl(198, 60%, 50%);
+    --neutral-bg: hsl(0, 0%, 100%);
+}
+html{
+    font-family: "Open Sans", sans-serif;
+    font-variant: 400;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    background: var(--main-bg);
+    color: var(--neutral-bg);
+}
+
+h2,h3,.button-link{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;   
+}
+nav{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+}
+
+ul,li{ 
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--neutral-bg);
+}
+h2{
+    font-size: 2.5rem; 
+}
+h3{
+    font-size: 1.4rem;
+}
+a:hover{
+    color: var(--cyan-cta-bg);
+    text-decoration: underline;
+}
+
+main{
+    position:relative;
+    padding-bottom: 12.5rem;
+}
+.nav{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 73px 80px;
+    background: var(--intro-email-signup-bg);
+}
+.nav-rows{
+    display: flex;
+    align-items: center;
+}
+
+.nav-rows :not(:last-child){
+    padding-right: 3.5rem;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44.75rem;
+    background: var(--intro-email-signup-bg) url("images/bg-curvy-desktop.svg") bottom no-repeat;
+    background-size: 100% 16.875rem;
+    text-align:center;
+}
+.intro img{
+    width: 46.188rem;
+    height: 33.313rem;
+}
+
+.intro h2{
+    width: 46.375rem;
+    margin: 2.875rem;
+}
+.intro p{
+    width: 46.375rem;
+    font-size: 1.438rem;
+    padding: 0 1.875rem;
+}
+
+.button-link{
+    border:none;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    font-size: 1.4rem;
+    padding: 0.625rem 2.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight:700;
+    width: 100%;
+    max-width: 17.813rem;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    margin: 1.875rem 0; 
+}
+.button-link:hover{
+    background: linear-gradient(to right, hsl(198, 60%, 50%), hsl(198, 60%, 50%));
+}
+
+.features{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.875rem 9.875rem;
+    margin: 8.125rem 0;
+    padding: 0 18rem;
+    text-align: center  ;
+}
+
+.feature-text{
+    text-align: center;
+}
+.feature-text h3{
+    margin: 1.563rem 0 0.75rem 0;
+}
+
+.feature-end{
+    display: flex;
+    align-items: center;
+    padding: 0 6.25rem;
+}
+.feature-set p{
+    margin-top: 0.938rem;
+
+}
+.produce-box img{
+    height:28.75rem;
+    width: auto;
+    margin-right: 2.813rem;
+}
+
+.produce-text :not(:last-child){
+    margin-bottom: 1.563rem;
+}
+
+.produce-link{
+    color: var(--cyan-cta-bg);
+    border-bottom: 1.5px solid var(--cyan-cta-bg);
+    border-radius: 1.2 px;
+}
+.produce-link img{
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: Repeat(3,1fr);
+    gap: 2.563rem;
+    padding: 11.125rem;
+}
+
+.review-text{
+    background: var(--testimon-bg);
+    padding: 2.813rem 2.5rem;
+    border-radius: 0.7rem;
+    position: relative;
+}
+.review-text:first-child:before{
+    content: url("images/bg-quotes.png");
+    position: absolute;
+    top: -2.5rem;
+    left: -1.25rem;
+    z-index: -1;
+}
+.review-text p{
+    margin-bottom: 1.563rem;
+}
+
+.review-profile img{
+    width: 1.563rem;
+    height: 1.625rem;
+    border-radius: 50%;
+    margin-right: 0.313rem;
+}
+
+.review-profile-text h3{
+    font-size: 0.625rem;
+}
+.review-profile-text p{
+    font-size: 0.5rem;
+}
+.review-profile-text{
+    margin-left: 1.875rem;
+    margin-top:  -1.90rem;
+    padding: 0.125rem 0.125rem; 
+}
+.link-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--intro-email-signup-bg);
+    padding: 50px 74px 48px 74px;
+    border-radius: 0.438rem;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -9.688rem;
+}
+
+.link-up h2{
+    margin-bottom: 1.625rem;
+}
+.link-up p{
+    margin-bottom: 2.438rem;
+    text-align:center
+}
+form{
+    display:flex;
+    align-items: centre;
+}
+
+input[type = "email"]{
+    width: 30.125rem;
+    height: 3rem;
+    padding: 1.25rem 3rem;
+    border:none;
+    outline:none;
+    border-radius: 3.25rem;
+    margin-right: 20px;
+}
+input[type="submit"]{
+    margin: 0;
+}
+::placeholder{
+    opacity: 0.32;
+}
+
+footer{
+    background: var(--foot-bg);
+    padding: 12.5rem 5rem 8.313rem 7.375rem;
+    display:grid;
+    grid-template-columns: 4fr 3fr 1fr 1fr 2fr;
+    grid-template-rows:auto;
+    column-gap: 5rem;
+    grid-template-areas: 
+    "logo . . . ."
+    "location phone links next-links social"
+    ;
+}
+.bottom-logo{
+    grid-area: logo;
+    margin-bottom: 35px;
+}
+.bottom-location{
+    grid-area:location;
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+.bottom-location span{
+    padding-left: 35px;
+}
+
+.bottom-phone{
+    grid-area: phone;
+}
+.bottom-phone p{
+    margin-bottom: 26px;
+}
+
+.bottom-phone img{
+    margin-right: 24px;
+}
+.bottom-links{
+    grid-area:links;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.bottom-links a{
+    margin-bottom: 24px;
+}
+
+.bottom-next-links{
+    grid-area: next-links;
+    display:grid;
+    grid-template-columns:1 fr;
+}
+.bottom-next-links a{
+    margin-bottom: 24px;
+}
+
+.bottom-social{
+    grid-area: social;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottom-social i{
+    font-size: 1.875rem;
+}
+
+.attrib{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ @media (max-width: 375px) {
+    html {
+      font-size: 10px;
+    }
+  
+    h2 {
+      font-size: 25px;
+    }
+  
+   
+    .nav {
+      padding: 24px 20px;
+    }
+  
+    .nav-rows :not(:last-child) {
+      padding-right: 23px;
+    }
+    .logo-link img {
+      width: 82px;
+      height: 24px;
+    }
+  
+    
+    .intro img {
+      width: 305px;
+      height: 225px;
+    }
+    .intro h2 {
+      width: 302px;
+      margin: 23px;
+    }
+    .intro p {
+      width: 292px;
+      font-size: 12px;
+      padding: 0 23px;
+    }
+  
+    .button-link {
+      width: 242px;
+      padding: 18px 0;
+    }
+  
+  
+    .features {
+      grid-template-columns: 1fr;
+      gap: 87px 0px;
+      padding: 0 38px;
+      margin: 100px 0;
+    }
+  
+  
+  
+    .feature-end {
+      flex-direction: column;
+      padding: 0 25px;
+    }
+  
+    .produce-box img {
+      height: 215px;
+      margin: 0px 0px 52px 0px;
+    }
+   
+    .reviews {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 150px 22px;
+    }
+    .review-text:first-child::before {
+      left: 4px;
+    }
+  
+    
+    .link-up {
+      padding: 40px 25px;
+      bottom: -175px;
+    }
+  
+    form {
+      flex-direction: column;
+    }
+    input[type="email"],
+    input[type="submit"] {
+      width: 280px;
+      margin: 0px 0px 25px 0px;
+    }
+  
+    
+    footer {
+      grid-template-columns: 1fr;
+      padding: 280px 27px 42px 27px;
+      column-gap: 0;
+      row-gap: 20px;
+      grid-template-areas:
+        "logo"
+        "location"
+        "phone"
+        "links"
+        "next-links"
+        "social";
+    }
+  
+    .bottom-social i{
+      font-size: 28px;
+    }
+  
+    .fa-facebook{
+      justify-self: end;
+    }
+    .fa-twitter{
+      justify-self: center;
+    }
+    .fa-intagram{
+      justify-self: start;
+    }
+  }
+  
+  @media (max-width:600px){
+    html {
+        font-size: 10px;
+      }
+    
+      h2 {
+        font-size: 25px;
+      }
+    
+      
+      .nav {
+        padding: 24px 20px;
+      }
+    
+      .nav-rows :not(:last-child) {
+        padding-right: 23px;
+      }
+      .logo-link img {
+        width: 82px;
+        height: 24px;
+      }
+    
+      
+      .intro img {
+        width: 305px;
+        height: 225px;
+      }
+      .intro h2 {
+        width: 302px;
+        margin: 23px;
+      }
+      .intro p {
+        width: 292px;
+        font-size: 12px;
+        padding: 0 23px;
+      }
+    
+      .button-link {
+        width: 242px;
+        padding: 18px 0;
+      }
+    
+      
+      .features {
+        grid-template-columns: 1fr;
+        gap: 87px 0px;
+        padding: 0 38px;
+        margin: 100px 0;
+      }
+    
+      
+    
+      .feature-end {
+        flex-direction: column;
+        padding: 0 25px;
+      }
+    
+      .produce-box img {
+        height: 215px;
+        margin: 0px 0px 52px 0px;
+      }
+     
+      .reviews {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 150px 22px;
+      }
+      .review-text:first-child::before {
+        left: 4px;
+      }
+    
+      
+      .link-up {
+        padding: 40px 25px;
+        bottom: -175px;
+      }
+    
+      form {
+        flex-direction: column;
+      }
+      input[type="email"],
+      input[type="submit"] {
+        width: 242px;
+        margin: 0px 5px 25px 0px;
+      }
+    
+      
+      footer {
+        grid-template-columns: 1fr;
+        padding: 280px 27px 42px 27px;
+        column-gap: 0;
+        row-gap: 20px;
+        grid-template-areas:
+          "logo"
+          "location"
+          "phone"
+          "links"
+          "next-links"
+          "social";
+      }
+    
+      .bottom-social i{
+        font-size: 28px;
+      }
+    
+      .fa-facebook{
+        justify-self: end;
+      }
+      .fa-twitter{
+        justify-self: center;
+      }
+      .fa-intagram{
+        justify-self: start;
+      }
+}
+
+@media (max-width:900px){
+    html {
+        font-size: 13px;
+      }
+    
+      h2 {
+        font-size: 2px;
+      }
+    
+    
+      .nav {
+        padding: 24px 20px;
+      }
+    
+      .nav-rows :not(:last-child) {
+        padding-right: 23px;
+      }
+      .logo-link img {
+        width: 82px;
+        height: 24px;
+      }
+    
+      
+      .intro img {
+        width: 305px;
+        height: 225px;
+      }
+      .intro h2 {
+        width: 302px;
+        margin: 23px;
+        font-size: 25px;
+      }
+      .intro p {
+        width: 292px;
+        font-size: 12px;
+        padding: 0 23px;
+      }
+    
+      .button-link {
+        width: 242px;
+        padding: 18px 0px;
+        font-size: 14px;
+        align-items:center;
+       }
+    
+      /* features section */
+      .features {
+        grid-template-columns: 1fr;
+        gap: 87px 0px;
+        padding: 0 38px;
+        margin: 100px 0;
+      }
+    
+      
+    
+      .feature-end {
+        flex-direction: column;
+        padding: 0 25px;
+      }
+    
+      .produce-box img {
+        height: 215px;
+        margin: 0px 0px 52px 0px;
+      }
+     
+      .reviews {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 150px 22px;
+      }
+      .review-text:first-child::before {
+        left: 4px;
+      }
+    
+      
+      .link-up {
+        padding: 40px 25px;
+        bottom: -175px;
+    }
+    .link-up h2{
+        font-size: 25px;
+    }
+    .link-up p{
+        font-size: 16px;
+        align-content: center;
+        justify-content: center;
+        padding: 15px 15px;
+    }
+    
+      form {
+        flex-direction: column;
+      }
+      input[type="email"],
+      input[type="submit"] {
+        width: 280px;
+        margin: 0px 0px 25px 0px;
+      }
+    
+      
+      footer {
+        grid-template-columns: 1fr;
+        padding: 280px 27px 42px 27px;
+        column-gap: 0;
+        row-gap: 20px;
+        grid-template-areas:
+          "logo"
+          "location"
+          "phone"
+          "links"
+          "next-links"
+          "social";
+      }
+
+      .bottom-location span{
+          margin-left:-30px;
+      }
+    
+      .bottom-social i{
+        font-size: 28px;
+      }
+    
+      .fa-facebook{
+        justify-self: end;
+        
+      }
+      .fa-twitter{
+        justify-self: center;
+      }
+      .fa-intagram{
+        justify-self: start;
+      }
+   
+}
